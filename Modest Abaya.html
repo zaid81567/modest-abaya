@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modest Abaya | Abayas and burkhas in Taltala, Kolkata</title>
+<meta name="description" content="Modest Abaya is a boutique in Taltala, Kolkata. Custom and ready-made abayas, burkhas and modest Islamic wear, made in small batches by in-house artisans.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Noto+Sans+Bengali:wght@500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F9F0E1;
+    --band: #DDB4B8;
+    --ink: #352B29;
+    --muted: #5C4846;
+    --btn: #352B29;
+    --on-btn: #F9F0E1;
+    --gold: #B48F65;
+    --line: #D6BE9C;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #231A1A; --band: #3B2A2D; --ink: #F9F0E1; --muted: #D3BDB3;
+      --btn: #D4B173; --on-btn: #231A1A; --gold: #D4B173; --line: #4D3A36;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #231A1A; --band: #3B2A2D; --ink: #F9F0E1; --muted: #D3BDB3;
+    --btn: #D4B173; --on-btn: #231A1A; --gold: #D4B173; --line: #4D3A36;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+  .wrap { width: min(100% - 2.5rem, 62rem); margin-inline: auto; }
+
+  /* Hero */
+  .hero { background: var(--band); padding: 2.5rem 0 3rem; }
+  .hero .wrap { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+  .emblem { width: min(74vw, 300px); height: auto; display: block; flex: none; filter: drop-shadow(0 10px 18px rgba(53,43,41,.18)); }
+  .intro { text-align: center; }
+  .status { font-weight: 500; font-size: .95rem; color: var(--muted); margin: 0 0 .75rem; }
+  .status b { color: var(--ink); font-weight: 600; }
+  h1 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.1;
+    margin: 0;
+  }
+  .bn { font-family: "Noto Sans Bengali", "Figtree", sans-serif; font-weight: 500; color: var(--muted); font-size: 1.15rem; margin: .6rem 0 0; }
+  .lede { max-width: 34ch; font-size: 1.15rem; line-height: 1.5; margin: 1.1rem auto 1.6rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+  .btn {
+    display: inline-block;
+    background: var(--btn);
+    color: var(--on-btn);
+    padding: .85rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .btn:hover { filter: brightness(1.12); }
+  .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+  @media (min-width: 52rem) {
+    .hero { padding: 4rem 0; }
+    .hero .wrap { flex-direction: row-reverse; justify-content: space-between; gap: 4rem; }
+    .intro { text-align: left; }
+    .lede { margin-left: 0; }
+    .actions { justify-content: flex-start; }
+    .emblem { width: 340px; }
+  }
+
+  /* Sections */
+  section { padding: 3.5rem 0; }
+  h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(1.75rem, 6vw, 2.4rem);
+    line-height: 1.15;
+    margin: 0 0 1.5rem;
+  }
+  .make { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--gold); }
+  .make li { display: grid; gap: .15rem 2rem; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+  .make strong { font-size: 1.2rem; font-weight: 600; }
+  .make span { color: var(--muted); }
+  @media (min-width: 40rem) { .make li { grid-template-columns: 14rem 1fr; align-items: baseline; } }
+
+  .small { padding-top: 0; }
+  .small p { max-width: 38rem; margin: 0 0 1rem; }
+  .small p:last-child { margin-bottom: 0; }
+
+  .visit { background: var(--band); }
+  .facts { display: grid; gap: 1.5rem; margin: 0 0 2rem; }
+  .facts dt { font-weight: 600; margin-bottom: .2rem; }
+  .facts dd { margin: 0; color: var(--muted); }
+  .facts a { text-underline-offset: 3px; }
+  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(2, 1fr); } }
+  .visit .actions { justify-content: flex-start; }
+
+  footer { padding: 2rem 0 2.5rem; color: var(--muted); font-size: .95rem; }
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <svg class="emblem" viewBox="0 0 300 422" role="img" aria-label="Modest Abaya logo">
+      <defs>
+        <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#F0DDB0"/>
+          <stop offset=".35" stop-color="#C9A468"/>
+          <stop offset=".65" stop-color="#EBD39B"/>
+          <stop offset="1" stop-color="#A98457"/>
+        </linearGradient>
+        <path id="frame" d="M150 8 C158 36 196 48 236 56 C242 74 246 86 262 94 C278 102 286 122 286 150 L286 266 C286 294 278 314 262 322 C246 330 242 344 236 360 C196 368 158 380 150 408 C142 380 104 368 64 360 C58 344 54 330 38 322 C22 314 14 294 14 266 L14 150 C14 122 22 102 38 94 C54 86 58 74 64 56 C104 48 142 36 150 8 Z"/>
+      </defs>
+      <use href="#frame" fill="#F9F0E1" stroke="url(#gold)" stroke-width="9" stroke-linejoin="round"/>
+      <use href="#frame" fill="none" stroke="#C9A468" stroke-width="1" opacity=".7" transform="translate(150 208) scale(.88) translate(-150 -208)"/>
+      <!-- figure -->
+      <path d="M132 98 C132 84 146 76 158 80 C170 84 174 98 170 112 C168 122 176 128 184 136 C204 156 212 210 222 262 C230 306 244 330 264 338 C240 348 200 352 150 350 C112 350 80 344 60 334 C84 322 94 290 100 250 C106 206 112 168 128 138 C134 128 134 112 132 98 Z" fill="#E2A5AC" stroke="#352B29" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M140 100 C140 92 148 88 154 91 C158 94 158 104 156 110 C152 114 142 112 140 100 Z" fill="#F9F0E1" stroke="#352B29" stroke-width="1"/>
+      <path d="M126 142 C140 128 162 132 176 146 M122 156 C140 140 168 144 182 160" fill="none" stroke="#A16F70" stroke-width="1.3"/>
+      <!-- wordmark -->
+      <g font-family="'Playfair Display', Georgia, serif" font-weight="700" fill="#352B29" text-anchor="middle">
+        <text x="150" y="214" font-size="43" letter-spacing="1">MODEST</text>
+        <text x="150" y="262" font-size="43" letter-spacing="1">ABAYA</text>
+      </g>
+      <path d="M40 196 H62 M238 196 H260" stroke="#B48F65" stroke-width="1.5"/>
+      <path d="M244 276 l5 6 l-5 6 l-5 -6 Z" fill="none" stroke="#B48F65" stroke-width="1.2"/>
+      <path d="M150 33 l4 4 l-4 4 l-4 -4 Z" fill="#C9A468"/>
+    </svg>
+
+    <div class="intro">
+      <p class="status" id="status">Open daily, 11 AM to 10 PM</p>
+      <h1>Abayas and burkhas, made in small batches</h1>
+      <p class="bn" lang="bn">মডেস্ট আবায়া</p>
+      <p class="lede">Crafted by our in-house artisans. Taltala, Kolkata.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/919038212639" rel="noopener">Message on WhatsApp</a>
+        <a class="btn ghost" href="https://maps.app.goo.gl/5GGYpLmvF9qbDPFCA" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="make-h">
+    <div class="wrap">
+      <h2 id="make-h">What we make</h2>
+      <ul class="make">
+        <li><strong>Abayas</strong><span>Ready-made, or made to order.</span></li>
+        <li><strong>Burkhas</strong><span>Ready-made, or made to order.</span></li>
+        <li><strong>Modest Islamic wear</strong><span>Our signature collection, crafted by our in-house artisans.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="small" aria-labelledby="small-h">
+    <div class="wrap">
+      <h2 id="small-h">Made in small batches</h2>
+      <p>Each style is made in a limited run, with only a few pieces per design. Less fabric goes to waste, and you can find something that isn't on every rail.</p>
+      <p>Visit the shop to try pieces on, or message us on WhatsApp about having one made for you.</p>
+    </div>
+  </section>
+
+  <section class="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <h2 id="visit-h">Visit the shop</h2>
+      <dl class="facts">
+        <div><dt>Hours</dt><dd>Every day, 11 AM to 10 PM</dd></div>
+        <div><dt>Where</dt><dd>Taltala, Kolkata, near Elliot Road and Ripon Street</dd></div>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/919038212639" rel="noopener">+91 90 38 212639</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/modestabaya786" rel="noopener">@modestabaya786</a></dd></div>
+        <div><dt>Rated</dt><dd>5.0 stars from 9 ratings on Google Maps</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/919038212639" rel="noopener">Message on WhatsApp</a>
+        <a class="btn ghost" href="https://maps.app.goo.gl/5GGYpLmvF9qbDPFCA" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><p>Modest Abaya · মডেস্ট আবায়া · Taltala, Kolkata · <a href="https://www.instagram.com/modestabaya786" rel="noopener">Instagram</a></p></div>
+</footer>
+
+<script>
+  try {
+    var parts = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Kolkata", hour: "numeric", hour12: false }).formatToParts(new Date());
+    var h = parseInt(parts.filter(function (p) { return p.type === "hour"; })[0].value, 10) % 24;
+    var el = document.getElementById("status");
+    el.innerHTML = (h >= 11 && h < 22) ? "<b>Open now</b>, until 10 PM" : "<b>Closed now</b>, opens daily at 11 AM";
+  } catch (e) {}
+</script>
+</body>
+</html>
